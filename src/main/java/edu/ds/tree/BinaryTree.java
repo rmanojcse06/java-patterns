@@ -7,24 +7,7 @@ import java.util.Queue;
  * */
 public class BinaryTree {
 	private _TreeNode root = null;
-	class _TreeNode {
-		private Object data;
-		private _TreeNode left,right;
-		private _TreeNode(Object item) {
-			if(null != item) {
-				data = item;
-			}
-			left = right = null;
-		}
-		@Override
-		public String toString() {
-			return "data="+data+"; left="+(left==null?"null":left.data)+"; right="+(right==null?"null":right.data);
-		}
-	}
-	
-	
-	
-	public void insert(Object data) {
+	public void insert(Comparable data) {
 		if(null == root) {
 			root = new _TreeNode(data);
 			System.out.println("Adding "+data+" to parent");
@@ -59,41 +42,6 @@ public class BinaryTree {
 		
 	}
 	
-	
-	
-	
-	
-	
-	public void inorder(_TreeNode root) {
-		if(null != root) {
-			inorder(root.left);
-			System.out.println(root.data);
-			inorder(root.right);
-		}
-		return;
-	}
-	
-	public void preorder(_TreeNode root) {
-		if(null != root) {
-			System.out.println(root.data);
-			inorder(root.left);
-			inorder(root.right);
-		}
-		return;
-	}
-	
-	public void postorder(_TreeNode root) {
-		if(null != root) {
-			inorder(root.left);
-			inorder(root.right);
-			System.out.println(root.data);
-		}
-		return;
-	}
-	
-	
-	
-	
 	public _TreeNode find(_TreeNode parent, Object data) {
 		if(null != parent) {
 			if(parent.data.equals(data)) {
@@ -116,7 +64,10 @@ public class BinaryTree {
 			biTree.insert(i);
 		}
 		System.out.println(biTree.find(biTree.root, 2));
-//		biTree.preorder(biTree.root);
+		System.out.println("\n Bfsorder: ");_TreeNode.bfsorder(biTree.root);
+//		System.out.println("\n Preorder: ");_TreeNode.preorder(biTree.root);
+//		System.out.println("\n Inorder: ");_TreeNode.inorder(biTree.root);
+//		System.out.println("\n Postorder: ");_TreeNode.postorder(biTree.root);
 	}
 	
 }

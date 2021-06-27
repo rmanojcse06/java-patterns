@@ -1,4 +1,4 @@
-package edu.ds.sort.heap;
+package edu.ds.algorithm.sorting;
 
 import java.util.Arrays;
 /**
