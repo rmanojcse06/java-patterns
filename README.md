@@ -13,5 +13,11 @@ A Trial for interview have accumulated most of the Java Patterns learnt and used
 
 
 #### By *MANOJ RAVIKUMAR*, :india:	
-mailto:rmanojcse06@gmail.com																		
+mailto:rmanojcse06@gmail.com			
+
+
+
+
+
+
 						                      ### JESUS ✝️ LOVES ❤️ YOU 👇 ###
