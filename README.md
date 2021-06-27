@@ -10,5 +10,8 @@ A Trial for interview have accumulated most of the Java Patterns learnt and used
 
 
 
-Done by Manoj Ravikumar
+
 mailto:rmanojcse06@gmail.com
+#### By *MANOJ RAVIKUMAR*, :india:	
+																		
+						                      ### JESUS ✝️ LOVES ❤️ YOU 👇 ###
