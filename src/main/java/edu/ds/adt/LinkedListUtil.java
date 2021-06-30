@@ -1,4 +1,4 @@
-package edu.ds.list;
+package edu.ds.adt;
 
 public class LinkedListUtil {
 	
@@ -35,6 +35,22 @@ public class LinkedListUtil {
 		return head;
 		
 	}
+	public _SingleNode reverse(_SingleNode head) {
+		_SingleNode current = head;
+		_SingleNode next = null;
+		_SingleNode prev = null;
+		while (current != null) {
+			next = current.next;
+			current.next = prev;
+			prev = current;
+			current = next;
+			if(null == next) {
+				head = prev;
+			}
+		}
+		return head;
+	}
+	
 	public void print(_SingleNode node) {
 		System.out.println("\nSingle Linked List ::");
 		while(null != node) {
@@ -52,6 +68,9 @@ public class LinkedListUtil {
 		head = sll.delete(head, 11);
 		sll.print(head);
 		head = sll.delete(head, 1);
+		sll.print(head);
+		
+		head = sll.reverse(head);
 		sll.print(head);
 	}
 	

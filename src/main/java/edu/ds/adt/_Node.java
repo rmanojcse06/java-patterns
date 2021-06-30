@@ -1,3 +1,3 @@
-package edu.ds.list;
+package edu.ds.adt;
 
 public interface _Node {}

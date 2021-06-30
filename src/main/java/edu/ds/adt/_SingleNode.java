@@ -1,4 +1,4 @@
-package edu.ds.list;
+package edu.ds.adt;
 
 public class _SingleNode implements _Node {
 	Object data;

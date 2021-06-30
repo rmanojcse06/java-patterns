@@ -1,4 +1,4 @@
-package edu.dp.knapsack;
+package edu.dynamic.programming;
 /**
  * @author Manoj Ravikumar
  * 
